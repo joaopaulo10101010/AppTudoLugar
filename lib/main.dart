@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(home: TudoHome(),));
+  runApp(const MaterialApp(home: TudoHome(), debugShowCheckedModeBanner: false,));
 }
 
 class TudoHome extends StatefulWidget {
@@ -16,9 +16,12 @@ class _TudoHomeState extends State<TudoHome> {
   Widget build(BuildContext context) {
     return 
     
-      Scaffold(backgroundColor: const Color.fromARGB(250, 250, 250, 250),
+      Scaffold(backgroundColor: const Color(0xFFFAFAFA),
 
-        appBar: AppBar(title: Text("TudoLugar"), backgroundColor: Colors.white,),
+        appBar: AppBar(title: Text("TudoLugar"), 
+                       backgroundColor: Colors.white,
+                       
+                       ),
 
 
       );
